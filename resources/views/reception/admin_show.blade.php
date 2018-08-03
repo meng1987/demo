@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>会员登录界面模板</title>
+<title>鸿博IT学生登录界面</title>
 <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/style.css') }}" />
 <link rel="stylesheet" type="text/css" href="{{ URL::asset('css/body.css') }}"/> 
 </head>
@@ -10,7 +10,7 @@
 <div class="container">
 	<section id="content">
 		<form action="">
-			<h1>会员登录</h1>
+			<h1>鸿博IT学生登录界面</h1>
 			<div>
 				<input type="text" placeholder="邮箱" required="" id="username" />
 			</div>
@@ -36,7 +36,7 @@
 
 <br><br><br><br>
 <div style="text-align:center;">
-<p>来源:More Templates <a href="#" target="_blank" title="涛哥文化传媒有限公司">涛哥文化传媒有限公司</a> - Collect from <a href="#" title="网页模板" target="_blank">网页模板</a></p>
+<p>来源:More Templates <a href="#" target="_blank" title="涛劝鑫强传媒有限公司"><涛劝鑫强传媒有限公司></涛劝鑫强传媒有限公司></a> - Collect from <a href="#" title="网页模板" target="_blank">网页模板</a></p>
 </div>
 </body>
 </html>

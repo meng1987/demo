@@ -12,4 +12,3 @@ class Admin_loginController extends Controller
         return view('reception/admin_show');
     }
 }
-	

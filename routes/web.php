@@ -14,4 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('reception/admin_show', 'Reception\Admin_loginController@admin_show')->name('Admin_login');
+//Route::get('reception/admin_show', 'Reception\Admin_loginController@admin_show');
+
+Route::group(['namespace' => 'Reception'], function () {
+    Route::get('reception/admin_show', 'Admin_loginController@admin_show');
+});
