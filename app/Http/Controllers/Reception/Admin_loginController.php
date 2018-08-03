@@ -19,7 +19,7 @@ class Admin_loginController extends Controller
         if(!empty($username)){
             $name = json_decode(json_encode($username),true);
             if(md5(md5($_POST['password']).$name['0']['salt']) == $name['0']['password']){
-                echo "<script>alert('登陆成功');location.href='/reception/exam';</script>";
+                echo "<script>alert('登陆成功');location.href='/exam/exam_list';</script>";
             }else{
                 echo "<script>alert('密码输入错误');location.href='admin_show'</script>";
             }
