@@ -15,3 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('reception/admin_show', 'Reception\Admin_loginController@admin_show')->name('Admin_login');
+Route::get('reception/exam_list', 'Reception\Admin_loginController@exam_list')->name('Exam');
