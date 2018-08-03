@@ -14,4 +14,6 @@
 Route::group(['namespace' => 'Reception'], function () {
     Route::get('admin_login/admin_show', 'Admin_loginController@admin_show');
     Route::get('exam/exam_list', 'ExamController@exam_list');
+    Route::get('exam/star_exam', 'ExamController@star_exam');
+    Route::get('exam/end_exam', 'ExamController@end_exam');
 });
