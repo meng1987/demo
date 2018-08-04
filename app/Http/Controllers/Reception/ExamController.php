@@ -22,4 +22,3 @@ class ExamController extends Controller
         return view('reception/endExam');
     }
 }
-	

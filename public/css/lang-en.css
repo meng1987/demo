@@ -1,0 +1,39 @@
+.viewFrameWork-statusbar .status-right .status-item.item-search{
+    min-width: 70px;
+}
+.status-item.item-mine .panel-mine{
+    min-width: 200px;
+}
+
+.nav-operation .menu-item-fontsize,
+.nav-operation .menu-item-card{
+    font-size: 12px;
+}
+
+.modal-user-info .items .item{
+    padding-left: 68px;
+}
+
+
+.modal-set-password .items .item-input-group{
+    padding-left: 125px;
+}
+.modal-set-password .items .item-input-group .item-label{
+    width: 120px;
+}
+
+
+.search-wrapper .search-header.search-ing{
+    padding-right: 65px;
+}
+
+.body-wrapper .course-intro .intro-row{
+    padding-left: 80px;
+}
+
+.control-bar{
+    width: 140px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 10px;
+}
