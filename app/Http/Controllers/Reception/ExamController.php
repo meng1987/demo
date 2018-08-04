@@ -14,7 +14,7 @@ class ExamController extends Controller
     //开始考试模块
     public function star_exam()
     {
-        return view('reception/starExam');
+        return view('reception/starExamList');
     }
     //历史试题模块
     public function end_exam()

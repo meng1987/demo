@@ -36,9 +36,9 @@
                         </a><!-- /.brand -->
                     </div><!-- /.navbar-header -->
                     {{--<small>--}}
-                        {{--<img src="{{URL::asset('/home//images/logo.png')}}" alt="">--}}
-                        {{--&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;--}}
-                        {{--<span style="text-align: center;">鸿博在线考试系统</span>--}}
+                    {{--<img src="{{URL::asset('/home//images/logo.png')}}" alt="">--}}
+                    {{--&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;--}}
+                    {{--<span style="text-align: center;">鸿博在线考试系统</span>--}}
                     {{--</small>--}}
                 </a>
             </div>
@@ -143,30 +143,74 @@
             <!-- /Sidebar Menu -->
         </div>
 
-<!-- /Page Sidebar -->
-<!-- Page Content -->
-<div class="page-content">
-    <!-- Page Breadcrumb -->
-    <div class="page-breadcrumbs">
-        <ul class="breadcrumb">
-            <li class="active">在线考试</li>
-        </ul>
+        <!-- /Page Sidebar -->
+        <!-- Page Content -->
+        <div class="page-content">
+            <!-- Page Breadcrumb -->
+            <div class="page-breadcrumbs">
+                <ul class="breadcrumb">
+                    <li class="active">在线考试</li>
+                </ul>
+            </div>
+            <!-- /Page Breadcrumb -->
+
+            <!-- Page Body -->
+            <div class="page-body">
+
+
+
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12 col-xs-12">
+                        <div class="widget">
+                            <div class="widget-body">
+                                <div class="flip-scroll">
+                                    <table class="table table-bordered table-hover">
+                                        <thead class="">
+                                        <tr>
+                                            <th class="text-center">ID</th>
+                                            <th class="text-center">用户名称</th>
+                                            <th class="text-center">名称</th>
+                                            <th class="text-center">操作</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        {volist name='data' id='vo'}
+                                        <tr>
+                                            <td align="center">{$vo['uid']}</td>
+                                            <td align="center">{$vo['name']}</td>
+                                            <td align="center">{$vo['title']}</td>
+                                            <td align="center">
+                                                <a href="__URL__/upd/id/{$vo['uid']}" class="btn btn-primary btn-sm shiny">
+                                                    <i class="fa fa-edit"></i> 编辑
+                                                </a>
+                                                <a href="__URL__/delAdmin/id/{$vo['uid']}" onClick="warning('确实要删除吗', '')" class="btn btn-danger btn-sm shiny">
+                                                    <i class="fa fa-trash-o"></i> 删除
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        {/volist}
+
+                                        </tbody>
+                                    </table>
+
+                                </div>
+
+                                <div>
+                                    {$page}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <!-- /Page Body -->
     </div>
-    <!-- /Page Breadcrumb -->
-
-    <!-- Page Body -->
-    <div class="page-body">
-
-        <div style="text-align:center; line-height:1000%; font-size:24px;">
-
-            <p style="color:#f00;">鸿博在线考试系统</div>
-    </div>
-
-
-</div>
-<!-- /Page Body -->
-</div>
-<!-- /Page Content -->
+    <!-- /Page Content -->
 </div>
 </div>
 
