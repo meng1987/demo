@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Reception;
-
+use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 class ExamController extends Controller
@@ -14,6 +14,8 @@ class ExamController extends Controller
     //开始考试模块
     public function star_exam()
     {
+        $data = \DB::table("scrolls")->get();
+        print_r($data);die;
         return view('reception/starExamList');
     }
     //历史试题模块
