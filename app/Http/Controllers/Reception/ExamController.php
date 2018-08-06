@@ -15,8 +15,12 @@ class ExamController extends Controller
     public function star_exam()
     {
         $data = \DB::table("scrolls")->get();
-        print_r($data);die;
-        return view('reception/starExamList');
+        return view('reception/starExamList',compact('data'));
+    }
+    public function star_scrolls(){
+//        $data = \DB::table("scrolls")->get();
+//        print_r($data);die;
+        return view('reception/starExam');
     }
     //历史试题模块
     public function end_exam()

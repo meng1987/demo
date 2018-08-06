@@ -69,23 +69,15 @@
     <div class="header-wrapper">
 
         <div class="logo-wrapper">
-            <a href="https://exam.kaoshixing.com/exam" title="logo">
-                <img class="icon-logo logo-ksx"
-                     src="https://cdn.oss.kaoshixing.com/ksxing_static/website/base/logo-transparent-header.svg"/>
-            </a>
+            <div class="exam-name ellipsis" style="font-size: 24px; color:#0000ff; ">鸿博在线考试</div>
         </div>
 
 
-        <div class="exam-name ellipsis">考试</div>
-        <div class="user ellipsis">
+        <div class="exam-name ellipsis" style="font-size: 16px; color:red;">
             <i class="icon icon-a_nav_my"></i>
-            哈哈
+            提示: ①考试期间禁止大声喧哗 ②禁止左顾右盼,交头接耳 ③有问题请举手问老师 ④合理安排时间
         </div>
 
-        <a type="button" class="btn btn-default logout" id="logoutBtn">
-            <i class="icon icon-a_btn_sign_out btn-icon-left"></i>
-            退出
-        </a>
 
     </div>
 
@@ -95,7 +87,7 @@
 
             <div class="questions">
 
-                <div class="questions-title">单选题(total 10 questions，total 100.0 scores)</div>
+                <div class="questions-title">单选题(共10题，合计100.0分)</div>
 
 
                 <div class="questions-content">
@@ -114,7 +106,7 @@
                         <div class="exam-question">
                             <span class="question-index ellipsis">1.</span>
                             递接文件或名片时应当注意字体的。
-                            (10.0 points)
+                           (10.0 分)
                         </div>
 
 
@@ -174,7 +166,7 @@
                         <div class="exam-question">
                             <span class="question-index ellipsis">2.</span>
                             与他人在正式场合交谈时要严肃认真,还要注意语言的。
-                            (10.0 points)
+                           (10.0 分)
                         </div>
 
 
@@ -234,7 +226,7 @@
                         <div class="exam-question">
                             <span class="question-index ellipsis">3.</span>
                             客人来访时,我们要为客人打开房门。当房门向外开时()进。
-                            (10.0 points)
+                           (10.0 分)
                         </div>
 
 
@@ -294,7 +286,7 @@
                         <div class="exam-question">
                             <span class="question-index ellipsis">4.</span>
                             正式交往场合我们的仪表仪容要给人()的感觉。
-                            (10.0 points)
+                           (10.0 分)
                         </div>
 
 
@@ -354,7 +346,7 @@
                         <div class="exam-question">
                             <span class="question-index ellipsis">5.</span>
                             做客时入座动作要。
-                            (10.0 points)
+                           (10.0 分)
                         </div>
 
 
@@ -414,7 +406,7 @@
                         <div class="exam-question">
                             <span class="question-index ellipsis">6.</span>
                             日常生活中邻里之间应。
-                            (10.0 points)
+                           (10.0 分)
                         </div>
 
 

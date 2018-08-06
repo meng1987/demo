@@ -164,31 +164,31 @@
                         <div class="widget">
                             <div class="widget-body">
                                 <div class="flip-scroll">
-                                    <table class="table table-bordered table-hover">
+                                    <table class="table table-hover">
                                         <thead class="">
-                                        <tr>
-                                            <th class="text-center">ID</th>
-                                            <th class="text-center">用户名称</th>
-                                            <th class="text-center">名称</th>
-                                            <th class="text-center">操作</th>
-                                        </tr>
+
                                         </thead>
                                         <tbody>
-                                        {volist name='data' id='vo'}
+                                       <?php foreach($data as $v){ ?>
                                         <tr>
-                                            <td align="center">{$vo['uid']}</td>
-                                            <td align="center">{$vo['name']}</td>
-                                            <td align="center">{$vo['title']}</td>
                                             <td align="center">
-                                                <a href="__URL__/upd/id/{$vo['uid']}" class="btn btn-primary btn-sm shiny">
-                                                    <i class="fa fa-edit"></i> 编辑
+                                                    <a class="btn btn-app btn-success">
+                                                        <i class="icon-refresh bigger-230"></i>
+                                                        <?php echo $v->scrolls_name;?>
+                                                    </a>
+                                            </td>
+                                            <td align="center">
+                                                <a class="btn btn-danger btn-sm shiny">
+                                                    <?php echo $v->star_time;?>——<?php echo $v->end_time;?>
                                                 </a>
-                                                <a href="__URL__/delAdmin/id/{$vo['uid']}" onClick="warning('确实要删除吗', '')" class="btn btn-danger btn-sm shiny">
-                                                    <i class="fa fa-trash-o"></i> 删除
+                                            </td>
+                                            <td>
+                                                <a href="{{URL::asset('exam/star_scrolls')}}" class="btn btn-primary btn-sm shiny">
+                                                   开始考试
                                                 </a>
                                             </td>
                                         </tr>
-                                        {/volist}
+                                       <?php }?>
 
                                         </tbody>
                                     </table>
@@ -196,7 +196,6 @@
                                 </div>
 
                                 <div>
-                                    {$page}
                                 </div>
                             </div>
                         </div>
