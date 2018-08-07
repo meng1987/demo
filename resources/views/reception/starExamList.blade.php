@@ -36,9 +36,9 @@
                         </a><!-- /.brand -->
                     </div><!-- /.navbar-header -->
                     {{--<small>--}}
-                        {{--<img src="{{URL::asset('/home//images/logo.png')}}" alt="">--}}
-                        {{--&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;--}}
-                        {{--<span style="text-align: center;">鸿博在线考试系统</span>--}}
+                    {{--<img src="{{URL::asset('/home//images/logo.png')}}" alt="">--}}
+                    {{--&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;--}}
+                    {{--<span style="text-align: center;">鸿博在线考试系统</span>--}}
                     {{--</small>--}}
                 </a>
             </div>
@@ -58,19 +58,19 @@
                                     <img src="{{URL::asset('/home//images/421624.jpg')}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 </div>
                                 <section>
-                                    <h2><span class="profile"><span> 欢迎（{{session('name')}}）登录 </span></span></h2>
+                                    <h2><span class="profile"><span> 欢迎 </span></span></h2>
                                 </section>
                             </a>
                             <!--Login Area Dropdown-->
                             <ul class="pull-right dropdown-menu dropdown-arrow dropdown-login-area">
                                 <li class="username"><a>David Stevenson</a></li>
                                 <li class="dropdown-footer">
-                                    <a href="/admin_login/admin_show">
+                                    <a href="{:url('login/login')}">
                                         退出登录
                                     </a>
                                 </li>
                                 <li class="dropdown-footer">
-                                    <a href="/admin_login/personal_data">
+                                    <a href="{:url('index/changePwd')}">
                                         修改密码
                                     </a>
                                 </li>
@@ -143,30 +143,73 @@
             <!-- /Sidebar Menu -->
         </div>
 
-<!-- /Page Sidebar -->
-<!-- Page Content -->
-<div class="page-content">
-    <!-- Page Breadcrumb -->
-    <div class="page-breadcrumbs">
-        <ul class="breadcrumb">
-            <li class="active">在线考试</li>
-        </ul>
+        <!-- /Page Sidebar -->
+        <!-- Page Content -->
+        <div class="page-content">
+            <!-- Page Breadcrumb -->
+            <div class="page-breadcrumbs">
+                <ul class="breadcrumb">
+                    <li class="active">在线考试</li>
+                </ul>
+            </div>
+            <!-- /Page Breadcrumb -->
+
+            <!-- Page Body -->
+            <div class="page-body">
+
+
+
+                <div class="row">
+                    <div class="col-lg-12 col-sm-12 col-xs-12">
+                        <div class="widget">
+                            <div class="widget-body">
+                                <div class="flip-scroll">
+                                    <table class="table table-hover">
+                                        <thead class="">
+
+                                        </thead>
+                                        <tbody>
+                                       <?php foreach($data as $v){ ?>
+                                        <tr>
+                                            <td align="center">
+                                                    <a class="btn btn-app btn-success">
+                                                        <i class="icon-refresh bigger-230"></i>
+                                                        <?php echo $v->scrolls_name;?>
+                                                    </a>
+                                            </td>
+                                            <td align="center">
+                                                <a class="btn btn-danger btn-sm shiny">
+                                                    <?php echo $v->star_time;?>——<?php echo $v->end_time;?>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="{{URL::asset('exam/star_scrolls')}}?id=<?php echo $v->scrolls_id;?>" class="btn btn-primary btn-sm shiny">
+                                                   开始考试
+                                                </a>
+                                            </td>
+                                        </tr>
+                                       <?php }?>
+
+                                        </tbody>
+                                    </table>
+
+                                </div>
+
+                                <div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <!-- /Page Body -->
     </div>
-    <!-- /Page Breadcrumb -->
-
-    <!-- Page Body -->
-    <div class="page-body">
-
-        <div style="text-align:center; line-height:1000%; font-size:24px;">
-
-            <p style="color:#f00;">鸿博在线考试系统</div>
-    </div>
-
-
-</div>
-<!-- /Page Body -->
-</div>
-<!-- /Page Content -->
+    <!-- /Page Content -->
 </div>
 </div>
 
