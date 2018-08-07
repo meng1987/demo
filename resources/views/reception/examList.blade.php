@@ -58,19 +58,19 @@
                                     <img src="{{URL::asset('/home//images/421624.jpg')}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 </div>
                                 <section>
-                                    <h2><span class="profile"><span> 欢迎 </span></span></h2>
+                                    <h2><span class="profile"><span> 欢迎（{{session('name')}}）登录 </span></span></h2>
                                 </section>
                             </a>
                             <!--Login Area Dropdown-->
                             <ul class="pull-right dropdown-menu dropdown-arrow dropdown-login-area">
                                 <li class="username"><a>David Stevenson</a></li>
                                 <li class="dropdown-footer">
-                                    <a href="{:url('login/login')}">
+                                    <a href="/admin_login/admin_show">
                                         退出登录
                                     </a>
                                 </li>
                                 <li class="dropdown-footer">
-                                    <a href="{:url('index/changePwd')}">
+                                    <a href="/admin_login/personal_data">
                                         修改密码
                                     </a>
                                 </li>
