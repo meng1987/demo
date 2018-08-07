@@ -1,7 +1,10 @@
 <?php
 
 namespace App\Http\Controllers\Reception;
+
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Input;
 use App\Http\Controllers\Controller;
 
 class ExamController extends Controller
@@ -18,8 +21,9 @@ class ExamController extends Controller
         return view('reception/starExamList',compact('data'));
     }
     public function star_scrolls(){
-//        $data = \DB::table("scrolls")->get();
-//        print_r($data);die;
+        $id = input::all();
+        $data = \DB::table("scrolls")->where("scrolls_id",$id['id'])->get();
+        print_r($data);die;
         return view('reception/starExam');
     }
     //历史试题模块

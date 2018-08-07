@@ -183,7 +183,7 @@
                                                 </a>
                                             </td>
                                             <td>
-                                                <a href="{{URL::asset('exam/star_scrolls')}}" class="btn btn-primary btn-sm shiny">
+                                                <a href="{{URL::asset('exam/star_scrolls')}}?id=<?php echo $v->scrolls_id;?>" class="btn btn-primary btn-sm shiny">
                                                    开始考试
                                                 </a>
                                             </td>

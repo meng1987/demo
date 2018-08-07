@@ -75,7 +75,7 @@
 
         <div class="exam-name ellipsis" style="font-size: 16px; color:red;">
             <i class="icon icon-a_nav_my"></i>
-            提示: ①考试期间禁止大声喧哗 ②禁止左顾右盼,交头接耳 ③有问题请举手问老师 ④合理安排时间
+            提示: ①考试期间禁止大声喧哗 ②禁止左顾右盼,交头接耳 ③有问题请举手问老师 ④请合理安排时间
         </div>
 
 
