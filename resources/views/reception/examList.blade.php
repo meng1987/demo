@@ -58,7 +58,7 @@
                                     <img src="{{URL::asset('/home//images/421624.jpg')}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 </div>
                                 <section>
-                                    <h2><span class="profile"><span> 欢迎（{{session('name')}}）登录 </span></span></h2>
+                                    <h2><span class="profile"><span> 欢迎（{{session('major_name')}}系{{session('student_class')}}班{{session('student_name')}}）登录 </span></span></h2>
                                 </section>
                             </a>
                             <!--Login Area Dropdown-->

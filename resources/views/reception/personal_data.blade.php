@@ -2,7 +2,7 @@
     <form action="up_password" method="post" >
         <p>
             <span class="t">账号：</span>
-            <span class="c" style="font-family: MicrosoftYaHei;font-size: 16px;color: #999999;">{{session('name')}}</span>
+            <span class="c" style="font-family: MicrosoftYaHei;font-size: 16px;color: #999999;">{{session('student_name')}}</span>
         </p>
         <p>
             <span class="t">原密码：</span>

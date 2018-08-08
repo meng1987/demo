@@ -12,7 +12,7 @@
 		<form action="student_login" method="post">
 			<h1>鸿博IT学生登录界面</h1>
 			<div>
-				<input type="text" placeholder="用户名" required="" id="username" name="name"/>
+				<input type="text" placeholder="用户名" required="" id="username" name="student_name"/>
 			</div>
 			<div>
 				<input type="password" placeholder="密码" required="" id="password" name="password"/>
